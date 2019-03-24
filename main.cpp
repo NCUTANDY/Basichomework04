@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	int hour,minute,second;
+	printf("請輸入秒數:");
+	scanf("%d",&second);
+	hour=second/3600%60;
+	minute=second/60%60;
+	second=second%60;
+	printf("輸入的秒數為幾時幾分幾秒:%d,%d,%d\n", hour,minute,second);
+	system("pause");
+	return 0;
+}
